@@ -59,7 +59,6 @@ footer {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color:cornflowerblue;
   display: inline-block;
   margin: 0 auto;
   width: 26rem;
@@ -79,18 +78,11 @@ body {
   align-items: center;
 }
 
-
-/* ------ Card Styling ------ */
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 /* ---Image Style--- */
 .img-container {
   max-width: 85%;
   margin: 0 auto;
-  z-index: 1;
+  margin-top: -9rem;
   }
   
 .img-container > .img-shadow {
@@ -101,23 +93,22 @@ main {
 .component {
   background-color: var(--light-grayish-blue);
   margin: 0 1.5rem;
-  margin-top: -9rem;
+  margin-top: 9rem;
   border-radius: 2rem;
   padding: 0 2rem;
   padding-bottom: 4rem;
-  padding-top: 8.5rem;
   box-shadow: 0rem 4rem 4.80rem -4.80rem black;
 }
 
-/* ---Text Section style--- */
+/* ---Text Section Style--- */
 .text-container {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .text-container > h1 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* ---Accordion--- */
@@ -168,20 +159,25 @@ hr {
   main {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   /* ---Image Style--- */
-  .img-contaner {
-    max-width: 50%;
+  .img-container {
+    position: absolute;
+    width: 50%;
+    margin: 0;
+    left: -3rem;
   }
   
   /* --- Card Style --- */
   .component {
     margin: 0;
+    margin-left: 12rem;
     padding: 2.5rem 7rem 7rem 25.5rem;
   }
 
-
+  
 
 }
 
