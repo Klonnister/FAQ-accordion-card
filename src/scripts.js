@@ -1,10 +1,15 @@
 "use-strict";
 
 function headerClick (headerTextId, itemBodyId, itemHeaderArrow) {
+  //Accordion headers
   const headersText = document.querySelectorAll(".header-text");
   const clickedHeaderText = headerTextId;
+
+  //Accordion bodies
   const accordionBodies = document.querySelectorAll(".item-body");
   const clickedItemBody = itemBodyId;
+  
+  //Accordion arrows
   const accordionArrows = document.querySelectorAll(".arrow")
   const clickedItemArrow = itemHeaderArrow;
 
