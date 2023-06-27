@@ -219,6 +219,10 @@ hr {
     left: -10.5%;
   }
 
+  .img-box {
+    box-shadow: 0rem 4rem 4.80rem -4.80rem black;
+  }
+
   /* Accordion header */
   .text-container {
     width: 50ch;
