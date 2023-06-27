@@ -145,7 +145,7 @@ body {
   font-weight: 700;
 }
 
-.item-header:hover .header-text{
+.item-header:active .header-text{
   color: var(--soft-red);
 }
 
