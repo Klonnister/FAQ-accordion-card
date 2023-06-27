@@ -10,61 +10,72 @@
 
 <body>
   <main class="component">
+    <div class="box-container">
+      <img src="src/images/illustration-box-desktop.svg" alt="" class="img-box">
+    </div>
     <div class="img-container">
-    <img src="src/images/illustration-woman-online-mobile.svg" alt="">
-      <img src="src/images/bg-pattern-mobile.svg" alt="" class="img-shadow">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="src/images/illustration-woman-online-mobile.svg">
+        <source media="(min-width: 1023px)" srcset="src/images/illustration-woman-online-desktop.svg">
+        <img src="src/images/illustration-woman-online-mobile.svg" alt="" class="woman-img">
+      </picture>
+      <picture>
+        <source media="(max-width: 1023px)" srcset="src/images/bg-pattern-mobile.svg">
+        <source media="(min-width: 1023px)" srcset="src/images/bg-pattern-desktop.svg" class="img-shadow">
+        <img src="src/images/bg-pattern-desktop.svg" alt="" class="img-shadow">
+      </picture>
     </div>
     <div class="text-container">
       <h1 class="bold">FAQ</h1>
       
       <div>
         <div class="accordion-item">
-          <div class="item-header">
-            <h2 class="header-text">How many team members can I invite?</h2>
-            <img src="src/images/icon-arrow-down.svg" alt="">
+          <div class="item-header hoverable" id="header1" onclick="headerClick(headerText1, itemBody1, arrow1)">
+            <h2 class="header-text" id="headerText1">How many team members can I invite?</h2>
+            <img src="src/images/icon-arrow-down.svg" alt="" class="arrow" id="arrow1">
           </div>
-          <div class="item-body">
+          <div class="item-body hidden" id="itemBody1">
             <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
             team members for the Premium plan.</p>
           </div>
         </div>
         <hr>
         <div class="accordion-item">
-          <div class="item-header">
-            <h2 class="header-text">What is the maximum file upload size?</h2>
-            <img src="src/images/icon-arrow-down.svg" alt="">
+          <div class="item-header hoverable" onclick="headerClick(headerText2, itemBody2, arrow2)">
+            <h2 class="header-text" id="headerText2">What is the maximum file upload size?</h2>
+            <img src="src/images/icon-arrow-down.svg" alt="" class="arrow" id="arrow2">
           </div>
-          <div class="item-body">
+          <div class="item-body hidden" id="itemBody2">
             <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </div>
         </div>
         <hr>
         <div class="accordion-item">
-          <div class="item-header">
-            <h2 class="header-text">What is the maximum file upload size?</h2>
-            <img src="src/images/icon-arrow-down.svg" alt="">
+          <div class="item-header hoverable" onclick="headerClick(headerText3, itemBody3, arrow3)">
+            <h2 class="header-text" id="headerText3">What is the maximum file upload size?</h2>
+            <img src="src/images/icon-arrow-down.svg" alt="" class="arrow" id="arrow3">
           </div>
-          <div class="item-body">
+          <div class="item-body hidden" id="itemBody3">
             <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
           </div>
         </div>
         <hr>
         <div class="accordion-item">
-          <div class="item-header">
-            <h2 class="header-text">Can I cancel my subscription?</h2>
-            <img src="src/images/icon-arrow-down.svg" alt="">
+          <div class="item-header hoverable" onclick="headerClick(headerText4, itemBody4, arrow4)">
+            <h2 class="header-text" id="headerText4">Can I cancel my subscription?</h2>
+            <img src="src/images/icon-arrow-down.svg" alt="" class="arrow" id="arrow4">
           </div>
-          <div class="item-body">
+          <div class="item-body hidden" id="itemBody4">
             <p>Yes! Send us a message and we'll process your request no questions asked.</p>
           </div>
         </div>
         <hr>
         <div class="accordion-item">
-          <div class="item-header">
-            <h2 class="header-text">Do you provide additional support?</h2>
-            <img src="src/images/icon-arrow-down.svg" alt="">
+          <div class="item-header hoverable" onclick="headerClick(headerText5, itemBody5, arrow5)">
+            <h2 class="header-text" id="headerText5">Do you provide additional support?</h2>
+            <img src="src/images/icon-arrow-down.svg" alt="" class="arrow" id="arrow5">
           </div>
-          <div class="item-body">
+          <div class="item-body hidden" id="itemBody5">
             <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
           </div>
         </div>
