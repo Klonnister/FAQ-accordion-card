@@ -20,7 +20,6 @@
 }
 
 /* ------ GENERAL STYLING ------ */
-
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +85,7 @@ body {
   max-width: 28.33rem;
 }
 
-/* ---Image Style--- */
+/* ---Images Style--- */
 .img-container {
   max-width: 85%;
   margin: 0 auto;
@@ -112,8 +111,8 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ---Accordion--- */
-
+/* -----Accordion----- */
+/* Accordion header */
 .item-header {
   display: flex;
   align-items: center;
@@ -127,7 +126,7 @@ body {
   height: 0.65rem;
   margin-left: 1.75rem;
   margin-right: 0.5rem;
-  transition: transform 0.5s;
+  transition: transform 0.25s;
   }
 
 .rotate {
@@ -146,7 +145,7 @@ body {
   font-weight: 700;
 }
 
-.item-header:active .header-text{
+.item-header:hover .header-text{
   color: var(--soft-red);
 }
 
@@ -154,13 +153,14 @@ body {
   color: var(--soft-red); 
 }
 
+/* Accordion body */
 .item-body {
   padding-bottom: 1.5rem;
   padding-right: 2rem;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 
@@ -171,6 +171,8 @@ hr {
   border-bottom: 0.25px solid var(--dark-grayish-blue);
   opacity: 60%;
 }
+
+
 @media screen and (min-width: 64rem) {
   /* --- Card Style --- */
   .component {
@@ -183,7 +185,7 @@ hr {
     position: relative;
   }
 
-  /* ---Image Style--- */
+  /* ---Images Style--- */
   .img-container {
     max-width: 45%;
     margin: 0;
@@ -217,7 +219,7 @@ hr {
     left: -10.5%;
   }
 
-  
+  /* Accordion header */
   .text-container {
     width: 50ch;
     margin: 5rem 7rem 6rem 5rem;
@@ -226,12 +228,6 @@ hr {
   .text-container > h1 {
     text-align: start;
   }
-  
-  
-  
-
-  
-
 }
 
 
