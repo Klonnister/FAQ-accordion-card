@@ -1,14 +1,4 @@
 "use strict";
-/*const mainComponent = document.querySelector(".component");
-const boxImg = document.querySelector(".box-container");
-
-mainComponent.addEventListener("mouseover", () => {
-  boxImg.style.left = "-14.9%";
-});
-
-mainComponent.addEventListener("mouseout", () => {
-  boxImg.style.left = "-10.5%";
-});*/ 
 
 const accordionItems = document.querySelectorAll(".accordion-item");
 const boxImg = document.querySelector(".box-container")
@@ -21,16 +11,6 @@ accordionItems.forEach((item) => {
     boxImg.style.left = "-10.5%";
   });
 })
-/*
-boxImg.addEventListener("mouseover", () => {
-  boxImg.style.left = "-14.9%";
-});
-
-boxImg.addEventListener("mouseout", () => {
-  boxImg.style.left = "-10.5%";
-});*/
-
-
 
 function headerClick (headerTextId, itemBodyId, itemHeaderArrow, itemHeader) {
   //Accordion headers
