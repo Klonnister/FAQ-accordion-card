@@ -74,7 +74,7 @@ body {
 .component {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-grayish-blue);
+  background-color: white;
   margin: 0 1.5rem;
   margin-top: 10.5rem;
   margin-bottom: 0.5rem;
@@ -145,12 +145,8 @@ body {
   font-weight: 700;
 }
 
-.item-header:active .header-text{
+.hoverable:hover > .header-text {
   color: var(--soft-red);
-}
-
-.clicked  {
-  color: var(--soft-red); 
 }
 
 /* Accordion body */
@@ -217,6 +213,7 @@ hr {
     z-index: 2;
     top: 41%;
     left: -10.5%;
+    transition: left 0.25s;
   }
 
   /* Accordion header */
