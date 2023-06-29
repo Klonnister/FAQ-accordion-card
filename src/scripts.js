@@ -14,7 +14,7 @@ accordionItems.forEach((item) => {
 
 function headerClick (headerTextId, itemBodyId, itemHeaderArrow, itemHeader) {
   //Accordion headers
-  const accordionHeaders = document.querySelectorAll("item-header");
+  const accordionHeaders = document.querySelectorAll(".item-header");
   const clickedHeader = itemHeader;
 
   //Headers text
